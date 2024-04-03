@@ -11,6 +11,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+vim.keymap.set("n", "<C-Down>", "<C-w>j")
+vim.keymap.set("n", "<C-Up>", "<C-w>k")
 vim.keymap.set("n", "<C-Right>", "<C-w>l")
 vim.keymap.set("n", "<C-Left>", "<C-w>h")
 
