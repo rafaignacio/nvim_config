@@ -1,0 +1,159 @@
+
+{
+  "workbench.colorTheme": "Nord",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  },
+  "editor.cursorSurroundingLines": 8,
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+"terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "editor.inlineSuggest.enabled": true,
+  "workbench.iconTheme": "vscode-icons",
+"redhat.telemetry.enabled": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.compactFolders": false,
+  "NugetGallery.sources": [
+    "{\"name\": \"nuget.org\",\"url\": \"https://api.nuget.org/v3/index.json\"}",
+    "{\"name\": \"KNAB\", \"url\": \"https://pkgs.dev.azure.com/knab/_packaging/knabnl/nuget/v3/index.json\"}"
+  ],
+  "go.toolsManagement.autoUpdate": true,
+  "git.openRepositoryInParentFolders": "always",
+  "httpyac.clientCertificates": {},
+  "httpyac.cookieJarEnabled": true,
+  "rust-analyzer.check.command": "clippy",
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "editor.lineNumbers": "relative",
+  "git.autofetch": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.leader": "<space>",
+  "vim.useCtrlKeys": false,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 250,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    },
+    {
+      "before": ["<C-Right>"],
+      "after": ["<C-w>", "Right"]
+    },
+    {
+      "before": ["<C-Left>"],
+      "after": ["<C-w>", "Left"]
+    },
+    {
+      "before": ["<C-Down>"],
+      "after": ["<C-w>", "Down"]
+    },
+    {
+      "before": ["<C-Up>"],
+      "after": ["<C-w>", "Up"]
+    },
+    {
+      "before": ["<leader>", "Right"],
+      "commands": [":vsp"]
+    },
+    {
+      "before": ["<leader>", "Down"],
+      "commands": [":sp"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["search.action.openEditor"]
+    },
+    {
+      "before": ["<leader>", "q", "a"],
+      "commands": ["workbench.action.closeAllEditors"]
+    },
+    {
+      "before": ["<leader>", "q", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": ["<leader>", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["<leader>", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    }
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "PrateekMahendrakar.prettyxml"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
